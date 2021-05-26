@@ -15,7 +15,7 @@ export default createGlobalStyle`
         border: 0;
         outline: 0;
 
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Whitney', sans-serif;
     }
 
     :root {
@@ -40,4 +40,5 @@ export default createGlobalStyle`
     
         --rocketseat: #6633cc;
     }
+
 `;

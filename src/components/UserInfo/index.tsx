@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import UserStatus from '../UserStatus'
 
 import { 
     Container,
@@ -12,11 +14,19 @@ import {
 } from './styles';
 
 const UserInfo: React.FC = () => {
+    const [status, setStatus] = useState(false);
+
+    function handleShowStatusOptions() {
+        setStatus(!status);
+    }
+
     return (
         <Container>
             
+            {status && <UserStatus />}
+
             <Profile>
-                <Avatar />
+                <Avatar onClick={handleShowStatusOptions}/>
                 <UserData>
                     <strong>
                         Deru

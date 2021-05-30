@@ -9,6 +9,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    position: relative;
+
     padding: 10px;
     background-color: var(--quaternary);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px 0px;
@@ -17,7 +19,6 @@ export const Container = styled.div`
 export const Profile = styled.div`
     display: flex;
     align-items: center;
-
 
 `;
 
